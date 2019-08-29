@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+    <TextView
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@+id/population"
+            android:id="@+id/country"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_toStartOf="@+id/population"/>
+
+    <TextView
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"            android:textSize="15sp"
+            android:text="City"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_toLeftOf="@+id/population"
+            android:layout_below="@id/country"
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_toStartOf="@+id/population"/>
+
+    <TextView
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Population"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</RelativeLayout>
